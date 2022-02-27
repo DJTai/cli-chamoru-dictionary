@@ -1,10 +1,7 @@
-#!/usr/bin/env python
-
-'''For adding words to the Chamoru dictionary'''
+"""For adding words to the Chamoru dictionary"""
 
 import json
 import logging
-import sys
 
 import dict_helper
 
@@ -21,8 +18,8 @@ def _handle_new_word_input(chamoru_dict, word_to_add, value):
         str: Value response for the value prompt.
     """
 
-    value_response = input(f'{value}: ')
-    if value_response == 'q':
+    value_response = input(f"{value}: ")
+    if value_response == "q":
         chamoru_dict.pop(word_to_add)
         return None
 
@@ -60,7 +57,7 @@ def _add_word_to_dict(chamoru_dict, word_to_add):
         print(f'Abandoning adding "{word_to_add}".\n')
         return None
 
-    if ch_ex != '':
+    if ch_ex != "":
         en_ex = _handle_new_word_input(chamoru_dict, word_to_add, "English translation")
         if en_ex is None:
             print(f'Abandoning adding "{word_to_add}".\n')
@@ -87,12 +84,12 @@ def _add_word_to_dict(chamoru_dict, word_to_add):
     chamoru_dict[word_to_add]["pronunciation"] = ""
     chamoru_dict[word_to_add]["origin"] = ""
 
-    if ch_ex != '':
+    if ch_ex != "":
         chamoru_dict[word_to_add]["chamoru_examples"].append(ch_ex)
         chamoru_dict[word_to_add]["english_examples"].append(en_ex)
-    if otro != '':
+    if otro != "":
         chamoru_dict[word_to_add]["other_spellings"].append(otro)
-    if source != '':
+    if source != "":
         chamoru_dict[word_to_add]["sources"].append(source)
 
     return chamoru_dict[word_to_add]
@@ -106,7 +103,7 @@ def add_to_dictionary(filename, chamoru_dict):
         chamoru_dict (dict): Chamoru dictionary object.
     """
 
-    print(f'Adding to {filename}')
+    print(f"Adding to {filename}")
 
     # Run continuously until done
     while True:
@@ -114,27 +111,26 @@ def add_to_dictionary(filename, chamoru_dict):
         word_data = None
 
         word_to_add = dict_helper.handle_input()
-        if word_to_add == '':
+        if word_to_add == "":
             print("Exiting. Saina Ma'åsi'")
             break
-        else:
-            # Check if word exists
-            word_data = dict_helper.check_dict_for_word(chamoru_dict, word_to_add)
+
+        word_data = dict_helper.check_dict_for_word(chamoru_dict, word_to_add)
 
         # word_data will exist if the word is already defined
         if word_data is None:
             print(f'Adding the word, "{word_to_add}"')
             # assigned returned data to an unused variable
-            logging.info(f'Trying to add {word_to_add}')
+            logging.info(f"Trying to add {word_to_add}")
             _ = _add_word_to_dict(chamoru_dict, word_to_add)
 
             if _ is None:
-                logging.warning(f'Abandoned adding {word_to_add}')
+                logging.warning(f"Abandoned adding {word_to_add}")
             else:
-                logging.info(f'Successfully added {word_to_add}')
+                logging.info(f"Successfully added {word_to_add}")
         else:
-            print(f'{word_to_add} already exists.\n')
+            print(f"{word_to_add} already exists.\n")
 
     # Add all new words to the file
-    with open(filename, 'w', encoding='utf-8') as merged_file:
+    with open(filename, "w", encoding="utf-8") as merged_file:
         json.dump(chamoru_dict, merged_file, indent=4, ensure_ascii=False)

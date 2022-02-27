@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-
 """General helper functions for accessing the Chamoru dictionary"""
-
-import json
-import sys
 
 
 def check_dict_for_word(chamoru_dict, word_to_search):
@@ -50,6 +45,16 @@ def handle_input():
     return word_to_search
 
 
+def print_numbered_list(data: list):
+    """Enumerates through 'data' and prints it as a numbered list.
+
+    Args:
+        data (list): Data to display.
+    """
+    for index, value in enumerate(data):
+        print(f" {index+1}: {value}")
+
+
 def stylize_output(word_data):
     """Helper function to stylize the output.
 
@@ -61,38 +66,33 @@ def stylize_output(word_data):
     """
 
     try:
-        word_def = word_data['definitions']
-        word_types = word_data['types']
-        word_syn = word_data['see_also']
-        word_ch_ex = word_data['chamoru_examples']
-        word_en_ex = word_data['english_examples']
-    except KeyError as ke:
-        print(f'{word_data} missing required key')
-        raise(ke)
-        return None
+        word_def = word_data["definitions"]
+        word_types = word_data["types"]
+        word_syn = word_data["see_also"]
+        word_ch_ex = word_data["chamoru_examples"]
+        word_en_ex = word_data["english_examples"]
 
-    print('Definitions:')
-    for i in range(len(word_def)):
-        print(f'  {i+1}: {word_def[i]}')
+        print("Definitions:")
+        print_numbered_list(word_def)
 
-    print('Types:')
-    for i in range(len(word_types)):
-        print(f'  {i+1}: {word_types[i]}')
+        print("Types:")
+        print_numbered_list(word_types)
 
-    # Check if example sentences are stored
-    if len(word_ch_ex) > 0:
-        print('Chamoru Examples:')
-        for i in range(len(word_ch_ex)):
-            print(f'  {i+1}: {word_ch_ex[i]}')
-        print('English Examples Translations:')
-        for i in range(len(word_en_ex)):
-            print(f'  {i+1}: {word_en_ex[i]}')
+        # Check if example sentences are stored
+        if len(word_ch_ex) > 0:
+            print("Chamoru Examples:")
+            print_numbered_list(word_ch_ex)
 
-    # Check if related-words are stored
-    if len(word_syn) > 0:
-        print('See also:')
-        for i in range(len(word_syn)):
-            print(f'  {i+1}: {word_syn[i]}')
+            print("English Examples Translations:")
+            print_numbered_list(word_en_ex)
 
-    print()
-    return None
+        # Check if related-words are stored
+        if len(word_syn) > 0:
+            print("See also:")
+            print_numbered_list(word_syn)
+
+        print()
+
+    except KeyError as key_error:
+        print(f"{word_data} missing required key")
+        raise key_error
