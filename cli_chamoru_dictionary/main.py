@@ -4,8 +4,8 @@ import json
 import logging
 import sys
 
-from cli_chamoru_dictionary import add
-from cli_chamoru_dictionary import search
+import add
+import search
 
 
 def _init_logger():
@@ -39,7 +39,7 @@ def main():
 
     if chamoru_dict is None:
         print("File can't be loaded. Exiting.")
-        logging.critical("%s cannot be found", filename)
+        logging.critical(f"{filename} cannot be found.")
         return None
 
     # CLI argument
