@@ -2,8 +2,8 @@
 
 > Chamoru dictionary accessed via the CLI
 
-[![Build Status][build-image]][build-url]
-[![Code Coverage][coverage-image]][coverage-url]
+![build](https://github.com/DJTai/cli-chamoru-dictionary/actions/workflows/build.yml/badge.svg)
+[![codecov](https://codecov.io/gh/DJTai/cli-chamoru-dictionary/branch/main/graph/badge.svg?token=J6J8QZT7JX)](https://codecov.io/gh/DJTai/cli-chamoru-dictionary)
 
 # Pre-requisites
 
