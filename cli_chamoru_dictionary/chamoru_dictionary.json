@@ -1,0 +1,277 @@
+{
+    "adai": {
+        "definitions": [
+            "1. Friend. Probably from adahi, or two who care for each other."
+        ],
+        "types": [
+            "Class-2"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "che'lu": {
+        "definitions": [
+            "1. Sister or brother (non-gender)."
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "Gai che'lu yu' palao'an.\nGai che'lu yu' låhi."
+        ],
+        "english_examples": [
+            "I have a sister.\nI have a brother."
+        ],
+        "sources": [
+            "CHamoru Reference Grammar, 1973 (Donald M. Topping, Bernadita C. Dungca)"
+        ]
+    },
+    "che'lu-hu": {
+        "definitions": [
+            "1. my sister / my brother / my sibling"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [
+            "che'lu+hu=che'lu-hu"
+        ],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "che'lu-mu": {
+        "definitions": [
+            "1. your brother,  your sister, your sibling"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "che'lu-ña": {
+        "definitions": [
+            "1. his or her sibling / relative / close friend"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "che'lu-ta": {
+        "definitions": [
+            "1. our sister, our brother, our sibling"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "che'lun-miyu": {
+        "definitions": [
+            "1. your (plural) sibling"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "ga'chong": {
+        "definitions": [
+            "1. partner, mate, friend"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "Ya-ña i ga'chong i palao'an."
+        ],
+        "english_examples": [
+            "He likes the friend of the girl."
+        ],
+        "sources": [
+            "Spoken CHamoru, 1969 (Donald M. Topping, Pedro M. Ogo)"
+        ]
+    },
+    "ga'lagu": {
+        "definitions": [
+            "1. Dog"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [
+            "ga'lågu"
+        ],
+        "chamoru_examples": [
+            "Guaha ga'-hu ga'lagu."
+        ],
+        "english_examples": [
+            "I have a pet dog."
+        ],
+        "sources": []
+    },
+    "ga'lågu": {
+        "definitions": [
+            "1. dog"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "Guaha ga'-hu ga'lågu."
+        ],
+        "english_examples": [
+            "I have a pet dog.",
+            "The literal translation is \"exists animal-mine dog\". The work \"ga'-\" is a classifier used for animals."
+        ],
+        "sources": [
+            "The Official CHamoru-English Dictionary, 2009 (Department of CHamoru Affairs, Government of Guam)"
+        ]
+    },
+    "galaide": {
+        "definitions": [
+            "1. canoe. log that's dug out"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "hafa": {
+        "definitions": [
+            "1. what"
+        ],
+        "types": [
+            "Class-4"
+        ],
+        "see_also": [
+            "håfa"
+        ],
+        "chamoru_examples": [
+            "Hafa ilek-mu?",
+            "Hafa tatatmanu hao?"
+        ],
+        "english_examples": [
+            "What did you say?",
+            "How are you?"
+        ],
+        "sources": []
+    },
+    "hafa na klasen": {
+        "definitions": [
+            "1. What kind of"
+        ],
+        "types": [
+            "Question marker"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": [
+            "Spoken CHamoru, 1969 (Donald M. Topping, Pedro M. Ogo)"
+        ]
+    },
+    "hafkao": {
+        "definitions": [
+            "1. Useless things, words, varieties of things or languages that cannot be identified exactly."
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "Hafkao ha' siha ilelek-ña.",
+            "Hafkao ha' siha finahåhan-ña."
+        ],
+        "english_examples": [
+            "She is talking nonsense.",
+            "He is buying a variety of useless things."
+        ],
+        "sources": [
+            "The Official CHamoru-English Dictionary, 2009 (Department of CHamoru Affairs, Government of Guam)"
+        ]
+    },
+    "haga'": {
+        "definitions": [
+            "1. blood"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "A'annok i haga' gi chetnot."
+        ],
+        "english_examples": [
+            "The blood is showing on the wound."
+        ],
+        "sources": [
+            "The Official CHamoru-English Dictionary, 2009 (Department of CHamoru Affairs, Government of Guam)"
+        ]
+    },
+    "haga-hu": {
+        "definitions": [
+            "1. my daugther"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [
+            "haga + hu = haga-hu"
+        ],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "haga-ña": {
+        "definitions": [
+            "1. her/his daugther"
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [],
+        "english_examples": [],
+        "sources": []
+    },
+    "hagan": {
+        "definitions": [
+            "1. Daughter  of."
+        ],
+        "types": [
+            "Noun"
+        ],
+        "see_also": [],
+        "chamoru_examples": [
+            "Hagan Tomas."
+        ],
+        "english_examples": [
+            "Thomas' daughter."
+        ],
+        "sources": [
+            "CHamoru-English Dictionary, 1975 (Donald M. Topping, Pedro M. Ogo, Bernadita C. Dungca)"
+        ]
+    }
+}
